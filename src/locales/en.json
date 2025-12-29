@@ -1,0 +1,39 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "menu": "Menu",
+    "gallery": "Gallery",
+    "contact": "Contact"
+  },
+  "hero": {
+    "viewMenu": "View Menu"
+  },
+  "about": {
+    "subtitle": "Our Story",
+    "title": "Tradition and Flavor"
+  },
+  "menu": {
+    "subtitle": "Our Menu",
+    "title": "Culinary Delights",
+    "viewFullMenu": "View full menu (only)"
+  },
+  "gallery": {
+    "subtitle": "Gallery",
+    "title": "Special Moments"
+  },
+  "contact": {
+    "subtitle": "Contact",
+    "title": "Visit Us",
+    "location": "Location",
+    "hours": "Hours",
+    "reservations": "Reservations",
+    "makeReservation": "Make Reservation"
+  },
+  "footer": {
+    "rights": "All rights reserved"
+  },
+  "ementaPage": {
+    "title": "Menu"
+  }
+}

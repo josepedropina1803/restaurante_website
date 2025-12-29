@@ -1,0 +1,39 @@
+{
+  "nav": {
+    "home": "Início",
+    "about": "Sobre",
+    "menu": "Ementa",
+    "gallery": "Galeria",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "viewMenu": "Ver Ementa"
+  },
+  "about": {
+    "subtitle": "Nossa História",
+    "title": "Tradição e Sabor"
+  },
+  "menu": {
+    "subtitle": "Nossa Ementa",
+    "title": "Delícias Culinárias",
+    "viewFullMenu": "Ver ementa completa (apenas)"
+  },
+  "gallery": {
+    "subtitle": "Galeria",
+    "title": "Momentos Especiais"
+  },
+  "contact": {
+    "subtitle": "Contacto",
+    "title": "Visite-nos",
+    "location": "Localização",
+    "hours": "Horário",
+    "reservations": "Reservas",
+    "makeReservation": "Fazer Reserva"
+  },
+  "footer": {
+    "rights": "Todos os direitos reservados"
+  },
+  "ementaPage": {
+    "title": "Ementa"
+  }
+}

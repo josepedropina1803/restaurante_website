@@ -1,0 +1,39 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "about": "Über Uns",
+    "menu": "Speisekarte",
+    "gallery": "Galerie",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "viewMenu": "Speisekarte Ansehen"
+  },
+  "about": {
+    "subtitle": "Unsere Geschichte",
+    "title": "Tradition und Geschmack"
+  },
+  "menu": {
+    "subtitle": "Unsere Speisekarte",
+    "title": "Kulinarische Köstlichkeiten",
+    "viewFullMenu": "Vollständige Speisekarte ansehen (nur)"
+  },
+  "gallery": {
+    "subtitle": "Galerie",
+    "title": "Besondere Momente"
+  },
+  "contact": {
+    "subtitle": "Kontakt",
+    "title": "Besuchen Sie Uns",
+    "location": "Standort",
+    "hours": "Öffnungszeiten",
+    "reservations": "Reservierungen",
+    "makeReservation": "Reservierung Machen"
+  },
+  "footer": {
+    "rights": "Alle Rechte vorbehalten"
+  },
+  "ementaPage": {
+    "title": "Speisekarte"
+  }
+}

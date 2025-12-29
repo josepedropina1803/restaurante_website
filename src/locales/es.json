@@ -1,0 +1,39 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre Nosotros",
+    "menu": "Menú",
+    "gallery": "Galería",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "viewMenu": "Ver Menú"
+  },
+  "about": {
+    "subtitle": "Nuestra Historia",
+    "title": "Tradición y Sabor"
+  },
+  "menu": {
+    "subtitle": "Nuestro Menú",
+    "title": "Delicias Culinarias",
+    "viewFullMenu": "Ver menú completo (solo)"
+  },
+  "gallery": {
+    "subtitle": "Galería",
+    "title": "Momentos Especiales"
+  },
+  "contact": {
+    "subtitle": "Contacto",
+    "title": "Visítanos",
+    "location": "Ubicación",
+    "hours": "Horario",
+    "reservations": "Reservas",
+    "makeReservation": "Hacer Reserva"
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados"
+  },
+  "ementaPage": {
+    "title": "Menú"
+  }
+}

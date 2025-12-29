@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans text-gray-800;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-gold text-dark-brown px-8 py-3 rounded-sm font-sans font-semibold uppercase tracking-wider hover:bg-yellow-600 transition-all duration-300;
+  }
+
+  .section-title {
+    @apply font-serif text-4xl md:text-5xl text-dark-brown mb-4 text-center;
+  }
+
+  .section-subtitle {
+    @apply text-gold text-sm uppercase tracking-widest mb-8 text-center;
+  }
+}

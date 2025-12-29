@@ -1,0 +1,135 @@
+{
+  "nome": "La Bella Tavola",
+  "slogan": "Expérience gastronomique authentique",
+  "descricao": [
+    "Bienvenue à La Bella Tavola, où la tradition culinaire rencontre l'élégance contemporaine. Depuis 1995, nous sommes fiers de servir des plats authentiques préparés avec des ingrédients de la plus haute qualité.",
+    "Notre cuisine combine des recettes traditionnelles transmises de génération en génération avec des techniques modernes, créant ainsi une expérience gastronomique unique et mémorable.",
+    "Chaque plat est soigneusement élaboré par notre chef exécutif, garantissant que chaque repas est une célébration des saveurs authentiques."
+  ],
+  "contacto": {
+    "telefone": "+351 21 123 4567",
+    "email": "reservas@labellatabola.pt",
+    "morada": {
+      "rua": "Rua da Gastronomia, 123",
+      "codigoPostal": "1200-001",
+      "cidade": "Lisboa",
+      "pais": "Portugal"
+    }
+  },
+  "horario": {
+    "descricao": "Lundi - samedi : 12h00 - 23h00<br />Dimanche : 12h00 - 22h00"
+  },
+  "redesSociais": {
+    "facebook": "#",
+    "instagram": "#",
+    "tripadvisor": "#"
+  },
+  "ementa": [
+    {
+      "categoria": "Entrées",
+      "itens": [
+        {
+          "nome": "Bruschetta Classique",
+          "descricao": "Tomate fraîche, basilic et huile d'olive sur pain italien",
+          "preco": "€8.50"
+        },
+        {
+          "nome": "Carpaccio de Bœuf",
+          "descricao": "Fines tranches de bœuf à la roquette et au parmesan",
+          "preco": "€12.00"
+        },
+        {
+          "nome": "Plateau de fromages",
+          "descricao": "Sélection de fromages portugais et internationaux",
+          "preco": "€15.00"
+        }
+      ]
+    },
+    {
+      "categoria": "Plats du jour",
+      "itens": [
+        {
+          "nome": "Plateau de fromages",
+          "descricao": "Sélection de fromages portugais et internationaux",
+          "preco": "€15.00"
+        }
+      ]
+    },
+    {
+      "categoria": "Plats principaux",
+      "itens": [
+        {
+          "nome": "Bacalhau à Brás",
+          "descricao": "Cabillaud râpé avec pommes de terre paille et œufs",
+          "preco": "€18.00"
+        },
+        {
+          "nome": "Poulpe à Lagareiro",
+          "descricao": "Poulpe grillé avec purée de pommes de terre et huile d'olive",
+          "preco": "€24.00"
+        },
+        {
+          "nome": "Bœuf Wellington",
+          "descricao": "Longe enveloppée de pâte feuilletée au foie gras",
+          "preco": "€28.00"
+        },
+        {
+          "nome": "Risotto aux champignons",
+          "descricao": "Risotto crémeux aux champignons sauvages",
+          "preco": "€16.00"
+        }
+      ]
+    },
+    {
+      "categoria": "Desserts",
+      "itens": [
+        {
+          "nome": "Pastel de Nata",
+          "descricao": "Tarte à la crème portugaise traditionnelle",
+          "preco": "€3.50"
+        },
+        {
+          "nome": "Mousse au chocolat",
+          "descricao": "Mousse au chocolat belge artisanale",
+          "preco": "€6.00"
+        },
+        {
+          "nome": "Tiramisu",
+          "descricao": "Classique italien avec café et mascarpone",
+          "preco": "€7.00"
+        }
+      ]
+    }
+  ],
+  "imagens": {
+    "hero": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1600&q=80",
+    "sobre": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80",
+    "galeria": [
+      {
+        "url": "https://images.unsplash.com/photo-1544025162-d76694265947?w=600&q=80",
+        "alt": "Plat gourmand"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600&q=80",
+        "alt": "Environnement du restaurant"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=600&q=80",
+        "alt": "Plats spéciaux"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1572448862527-d3c904757de6?w=600&q=80",
+        "alt": "Desserts"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1551218808-94e220e084d2?w=600&q=80",
+        "alt": "Bar"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&q=80",
+        "alt": "Chef préparant"
+      }
+    ]
+  },
+  "ano": 2024
+}
