@@ -1,102 +1,57 @@
-import translate from 'translate'
+// Serviço de tradução usando MyMemory Translation API (gratuita e funciona no browser)
+const TRANSLATION_API = 'https://api.mymemory.translated.net/get'
 
-// Configurar a biblioteca para usar o motor gratuito
-translate.engine = 'libre'
+// Cache de traduções para evitar chamadas repetidas
+const translationCache = new Map()
 
-// Mapeamento de códigos de idioma
-const langMap = {
-  pt: 'pt',
-  en: 'en',
-  es: 'es',
-  fr: 'fr',
-  de: 'de'
+function getCacheKey(text, targetLang) {
+  return text + '_' + targetLang
 }
 
-// Cache de traduções em memória
-const translationCache = {}
-
-// Carregar cache do localStorage
-const loadCacheFromStorage = () => {
-  try {
-    const cached = localStorage.getItem('translationCache')
-    if (cached) {
-      const parsedCache = JSON.parse(cached)
-      Object.assign(translationCache, parsedCache)
-    }
-  } catch (error) {
-    console.error('Erro ao carregar cache de traduções:', error)
-  }
-}
-
-// Salvar cache no localStorage
-const saveCacheToStorage = () => {
-  try {
-    localStorage.setItem('translationCache', JSON.stringify(translationCache))
-  } catch (error) {
-    console.error('Erro ao salvar cache de traduções:', error)
-  }
-}
-
-// Gerar chave de cache
-const getCacheKey = (text, toLang) => {
-  return `${text.substring(0, 50)}_${toLang}` // Usa os primeiros 50 caracteres como parte da chave
-}
-
-// Traduzir texto
-export const translateText = async (text, toLang = 'en') => {
+export async function translateText(text, targetLang) {
   // Se for português, retorna o texto original
-  if (toLang === 'pt' || !text) {
+  if (targetLang === 'pt' || !text) {
     return text
   }
 
-  // Verificar cache
-  const cacheKey = getCacheKey(text, toLang)
-  if (translationCache[cacheKey]) {
-    return translationCache[cacheKey]
+  // Verifica se já está em cache
+  const cacheKey = getCacheKey(text, targetLang)
+  if (translationCache.has(cacheKey)) {
+    return translationCache.get(cacheKey)
   }
 
   try {
-    const translated = await translate(text, {
-      from: 'pt',
-      to: langMap[toLang] || toLang
-    })
+    const url = TRANSLATION_API + '?q=' + encodeURIComponent(text) + '&langpair=pt|' + targetLang
+    const response = await fetch(url)
+    const data = await response.json()
 
-    // Salvar no cache
-    translationCache[cacheKey] = translated
-    saveCacheToStorage()
+    if (data.responseData && data.responseData.translatedText) {
+      const translatedText = data.responseData.translatedText
+      translationCache.set(cacheKey, translatedText)
+      return translatedText
+    }
 
-    return translated
-  } catch (error) {
-    console.error('Erro na tradução:', error)
     // Em caso de erro, retorna o texto original
     return text
+  } catch (error) {
+    console.error('Erro ao traduzir:', error)
+    return text
   }
 }
 
-// Traduzir objeto profundamente
-export const translateObject = async (obj, toLang = 'en') => {
-  if (toLang === 'pt') {
-    return obj
-  }
-
-  if (typeof obj === 'string') {
-    return await translateText(obj, toLang)
-  }
-
-  if (Array.isArray(obj)) {
-    return await Promise.all(obj.map(item => translateObject(item, toLang)))
-  }
-
-  if (typeof obj === 'object' && obj !== null) {
-    const translated = {}
-    for (const key of Object.keys(obj)) {
-      translated[key] = await translateObject(obj[key], toLang)
-    }
-    return translated
-  }
-
-  return obj
+export async function translateArray(textArray, targetLang) {
+  return Promise.all(textArray.map(text => translateText(text, targetLang)))
 }
 
-// Inicializar cache ao carregar o módulo
-loadCacheFromStorage()
+export async function translateObject(obj, targetLang, fields) {
+  const translations = await Promise.all(
+    fields.map(field => translateText(obj[field], targetLang))
+  )
+
+  const result = { ...obj }
+  fields.forEach((field, index) => {
+    result[field] = translations[index]
+  })
+
+  return result
+}

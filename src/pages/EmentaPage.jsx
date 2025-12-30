@@ -1,10 +1,10 @@
 import { useTranslation } from 'react-i18next'
-import { useRestauranteData } from '../hooks/useRestauranteData'
+import { useTranslatedRestauranteData } from '../hooks/useTranslatedRestauranteData'
 import LanguageSwitcher from '../components/LanguageSwitcher'
 
 function EmentaPage() {
   const { t } = useTranslation()
-  const restauranteData = useRestauranteData()
+  const { data: restauranteData } = useTranslatedRestauranteData()
 
   return (
     <div className="min-h-screen bg-cream">

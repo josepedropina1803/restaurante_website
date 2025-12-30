@@ -1,23 +1,23 @@
 {
-  "nome": "La Bella Tavola",
-  "slogan": "Experiência Gastronómica Autêntica",
+  "nome": "Dona Amélia",
+  "slogan": "Experiência Gastronómica Tradicional e Autêntica",
   "descricao": [
-    "Bem-vindo ao La Bella Tavola, onde a tradição culinária encontra a elegância contemporânea. Desde 1995, temos o orgulho de servir pratos autênticos preparados com ingredientes da mais alta qualidade.",
+    "Bem-vindo ao Dona Amélia, onde a tradição culinária encontra o bom paladar. Desde 1995, temos o orgulho de servir pratos autênticos preparados com ingredientes da mais alta qualidade.",
     "Nossa cozinha combina receitas tradicionais transmitidas através de gerações com técnicas modernas, criando uma experiência gastronómica única e memorável.",
     "Cada prato é cuidadosamente elaborado pelo nosso chef executivo, garantindo que cada refeição seja uma celebração de sabores autênticos."
   ],
   "contacto": {
-    "telefone": "+351 21 123 4567",
-    "email": "reservas@labellatabola.pt",
+    "telefone": "+351 960 030 240",
+    
     "morada": {
-      "rua": "Rua da Gastronomia, 123",
-      "codigoPostal": "1200-001",
-      "cidade": "Lisboa",
+      "rua": "R. do Conselheiro Veloso da Cruz 645",
+      "codigoPostal": "4400-095",
+      "cidade": "Porto, Vila Nova de Gaia",
       "pais": "Portugal"
     }
   },
   "horario": {
-    "descricao": "Segunda - Sábado: 12:00 - 23:00<br />Domingo: 12:00 - 22:00"
+    "descricao": "Segunda - Sábado: 10:00 - 22:00<br />Domingo: Encerrado"
   },
   "redesSociais": {
     "facebook": "#",
@@ -26,19 +26,23 @@
   },
   "ementa": [
     {
+      "id": "entradas",
       "categoria": "Entradas",
       "itens": [
         {
+          "id": "bruschetta-classica",
           "nome": "Bruschetta Clássica",
           "descricao": "Tomate fresco, manjericão e azeite sobre pão italiano",
           "preco": "€8.50"
         },
         {
+          "id": "carpaccio-vaca",
           "nome": "Carpaccio de Vaca",
           "descricao": "Finas fatias de carne com rúcula e parmesão",
           "preco": "€12.00"
         },
         {
+          "id": "tabua-queijos",
           "nome": "Tábua de Queijos",
           "descricao": "Seleção de queijos portugueses e internacionais",
           "preco": "€15.00"
@@ -46,9 +50,11 @@
       ]
     },
     {
+      "id": "pratos-diarios",
       "categoria": "Pratos Diários",
       "itens": [
         {
+          "id": "tabua-queijos-2",
           "nome": "Tábua de Queijos",
           "descricao": "Seleção de queijos portugueses e internacionais",
           "preco": "€15.00"
@@ -56,24 +62,29 @@
       ]
     },
     {
+      "id": "pratos-principais",
       "categoria": "Pratos Principais",
       "itens": [
         {
+          "id": "bacalhau-bras",
           "nome": "Bacalhau à Brás",
           "descricao": "Bacalhau desfiado com batata palha e ovos",
           "preco": "€18.00"
         },
         {
+          "id": "polvo-lagareiro",
           "nome": "Polvo à Lagareiro",
           "descricao": "Polvo grelhado com batatas a murro e azeite",
           "preco": "€24.00"
         },
         {
+          "id": "bife-wellington",
           "nome": "Bife Wellington",
           "descricao": "Lombo envolto em massa folhada com foie gras",
           "preco": "€28.00"
         },
         {
+          "id": "risotto-cogumelos",
           "nome": "Risotto de Cogumelos",
           "descricao": "Cremoso risotto com cogumelos selvagens",
           "preco": "€16.00"
@@ -81,19 +92,23 @@
       ]
     },
     {
+      "id": "sobremesas",
       "categoria": "Sobremesas",
       "itens": [
         {
+          "id": "pastel-nata",
           "nome": "Pastel de Nata",
           "descricao": "Tradicional pastel de nata português",
           "preco": "€3.50"
         },
         {
+          "id": "mousse-chocolate",
           "nome": "Mousse de Chocolate",
           "descricao": "Mousse artesanal de chocolate belga",
           "preco": "€6.00"
         },
         {
+          "id": "tiramisu",
           "nome": "Tiramisù",
           "descricao": "Clássico italiano com café e mascarpone",
           "preco": "€7.00"
@@ -102,31 +117,31 @@
     }
   ],
   "imagens": {
-    "hero": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1600&q=80",
-    "sobre": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80",
+    "hero": "https://scontent.fopo5-1.fna.fbcdn.net/v/t39.30808-6/485163049_1165026852079262_1723165574433526630_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=102&_nc_cb=99be929b-ad57045b&ccb=1-7&_nc_sid=833d8c&_nc_ohc=iFUURB7uBBYQ7kNvwGD9pew&_nc_oc=Adn2BUO2Ug2nKw5aaSjC7ixC4pJiRKWUTOvOPQWQ8-eckHtYJBEn7EbbnBNSnwjyM_MY-XNFcFM6nvYk2nO5SUwD&_nc_zt=23&_nc_ht=scontent.fopo5-1.fna&_nc_gid=iE030Rg2bsMFVxrstW1Wlw&oh=00_Aflo9V4bTJHJq2pICrDDYMio3R-kWUivWeh-HhBFsLmRHQ&oe=6959B06D",
+    "sobre": "https://scontent.fopo5-1.fna.fbcdn.net/v/t39.30808-6/590167970_1372215284693750_3099675311043534400_n.jpg?_nc_cat=100&_nc_cb=99be929b-ad57045b&ccb=1-7&_nc_sid=833d8c&_nc_ohc=WJI3I0ABE5IQ7kNvwEX3-o_&_nc_oc=AdlHfOJ6QB575UFcJ7j7O5xhEOQBRPx8IBw4CUjj34WZeHXBUgHNe_zE6hBPgBUSHoYpmm5_LhTCHYbY-2iSrYWp&_nc_zt=23&_nc_ht=scontent.fopo5-1.fna&_nc_gid=-JZ-aNxBu06NnTHz0jBpLQ&oh=00_AfnVdgvD5WTynCxMze_4QwXXkWSpRzPyid-NbSsJ-i-HmQ&oe=69599C42",
     "galeria": [
       {
-        "url": "https://images.unsplash.com/photo-1544025162-d76694265947?w=600&q=80",
-        "alt": "Prato gourmet"
+        "url": "https://scontent.fopo5-2.fna.fbcdn.net/v/t39.30808-6/485324954_1165727495342531_416236248034073860_n.jpg?_nc_cat=106&_nc_cb=99be929b-ad57045b&ccb=1-7&_nc_sid=f727a1&_nc_ohc=nJGM7aHniqUQ7kNvwEuY94c&_nc_oc=AdmTMSOcu2NlcS6U-xSW11xd_YVHu7U_pV2JqCFK71Atwprp5120vpavHNASOeEJ2cFzvUk-rARDK3Cshz5KjU8e&_nc_zt=23&_nc_ht=scontent.fopo5-2.fna&_nc_gid=6OPLZIIVK9ZcSGaKcaiJLg&oh=00_Aflu869C5QzpVgAoHpHaq3UkMVjT5a1dP-hfFkLPX_Ks-g&oe=6959C3F5",
+        "alt": "Francesinha"
       },
       {
-        "url": "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600&q=80",
+        "url": "https://scontent.fopo5-1.fna.fbcdn.net/v/t39.30808-6/484854357_1165727435342537_8136806331875589891_n.jpg?_nc_cat=102&_nc_cb=99be929b-ad57045b&ccb=1-7&_nc_sid=f727a1&_nc_ohc=hnrAResmtx4Q7kNvwFnhM23&_nc_oc=AdnOCndzRwKrwQVKZEwy4D8dbDH4k8HfWVSYVSlAq2zovmLrxxIG_2maBADfHpIG4D5jDC9rKddJZ6RChYHue9-j&_nc_zt=23&_nc_ht=scontent.fopo5-1.fna&_nc_gid=-AClykfDMtqtUoYm0E_V7w&oh=00_AflRc8wvLACAycYV35iflEiJHLOkBNkNquVjVK3YvBCgog&oe=6959CEED",
         "alt": "Ambiente do restaurante"
       },
       {
-        "url": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=600&q=80",
+        "url": "https://scontent.fopo5-2.fna.fbcdn.net/v/t39.30808-6/485158669_1165726348675979_7965920070653634818_n.jpg?_nc_cat=106&_nc_cb=99be929b-ad57045b&ccb=1-7&_nc_sid=f727a1&_nc_ohc=ahMYmpSNu1sQ7kNvwHCqw-W&_nc_oc=AdnukycrFTVfNVPziJU5G9allMxUy6fk-qJWMPHrZmnNlC9vA7tbn1yFp1knJW9vrQVaN_7_rMphD65Jt59qtZYn&_nc_zt=23&_nc_ht=scontent.fopo5-2.fna&_nc_gid=JDces1YEN_v_zpxY4haodQ&oh=00_AflJWSS9K3uas-5x7x1jYcvvvm7rS412LAWWhGaI8dQ87g&oe=6959BACF",
         "alt": "Pratos especiais"
       },
       {
-        "url": "https://images.unsplash.com/photo-1572448862527-d3c904757de6?w=600&q=80",
+        "url": "https://scontent.fopo5-1.fna.fbcdn.net/v/t39.30808-6/484968540_1165726372009310_8874652352069965365_n.jpg?_nc_cat=100&_nc_cb=99be929b-ad57045b&ccb=1-7&_nc_sid=f727a1&_nc_ohc=XySIIqd-PrMQ7kNvwHmo6p5&_nc_oc=AdkqjI6cmEH0OQXoFDnLH-FOz0rqtTpjBvscCgXJDlnNIJCCpKzFefBLjVxhpUZ7Ou3Acig9TItpniTYDXkWd4d6&_nc_zt=23&_nc_ht=scontent.fopo5-1.fna&_nc_gid=sjlPHzHKzj59F34W35YPkA&oh=00_AfmJNPCydsnWT7o28eH_9u5Nt72dOn8gRsDSM3ND1xp1YA&oe=69599B9A",
         "alt": "Sobremesas"
       },
       {
-        "url": "https://images.unsplash.com/photo-1551218808-94e220e084d2?w=600&q=80",
+        "url": "https://scontent.fopo5-2.fna.fbcdn.net/v/t39.30808-6/485308012_1165726782009269_8975985084362713988_n.jpg?_nc_cat=106&_nc_cb=99be929b-ad57045b&ccb=1-7&_nc_sid=f727a1&_nc_ohc=UAEhrQDbatEQ7kNvwHyu4YL&_nc_oc=AdmZ8dZPg12Oi_DoCONuG1jEDswceTE3itXJwkNw0ivui8ExwUJ3pz3agfMntUdvuiXyBcKD3Np7XXGVrl9wZOJy&_nc_zt=23&_nc_ht=scontent.fopo5-2.fna&_nc_gid=_A_mWSRwQZ9xCArH22t34A&oh=00_Afmo6L37dZxoJHpkvTwl9RxRk_D7IatYOeWwKS4EmdhAnw&oe=6959C007",
         "alt": "Bar"
       },
       {
-        "url": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&q=80",
+        "url": "https://scontent.fopo5-1.fna.fbcdn.net/v/t39.30808-6/485151832_1165726342009313_3085436045445502436_n.jpg?_nc_cat=102&_nc_cb=99be929b-ad57045b&ccb=1-7&_nc_sid=f727a1&_nc_ohc=di4TRovRiK0Q7kNvwE-Ui_V&_nc_oc=Adkx-slp4jbWsh5_iyTyLiTe7xP9-llGRSfCrK-jKcNBzcKqTvFPhpHkB7t-yscnTm-f8ZyiIb7PkFi_G-8XtY5l&_nc_zt=23&_nc_ht=scontent.fopo5-1.fna&_nc_gid=-N5zSO_uijPpou_qcjfFNA&oh=00_Afm7TXnIFT9UBq4I8Pfl0MG5qLsyfkDWtd2skufmrp2P7Q&oe=6959C351",
         "alt": "Chef preparando"
       }
     ]
