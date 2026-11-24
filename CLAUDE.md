@@ -12,6 +12,8 @@ Every task follows [docs/FLUXO_DESENVOLVIMENTO.md](docs/FLUXO_DESENVOLVIMENTO.md
 
 Never commit directly to `develop` or `main`. `main` only receives PRs from `develop`.
 
+Commits are authored by the user only (`José Pedro Pina`, set in this repo's local git config). Never add `Co-Authored-By: Claude` or any other Claude attribution to commit messages or PR descriptions.
+
 ## CI/CD
 
 - `.github/workflows/ci.yml` runs `npm ci`, lint and build on pushes to `develop`, `feature/**` and `bugfix/**`, and on PRs to `develop` and `main`.

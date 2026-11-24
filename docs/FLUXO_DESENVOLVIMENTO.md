@@ -86,6 +86,8 @@ git push -u origin feature/<N>-<descricao>
 
 O push corre a CI (lint + build) na branch.
 
+Os commits ficam sempre em nome do autor do repositório (José Pedro Pina). Não se adicionam linhas `Co-Authored-By` nem outra atribuição ao Claude, nem nos commits nem nos PRs.
+
 ### 10. Correr localmente para validação do utilizador
 Arranca-se o servidor na branch para o utilizador validar as alterações:
 
