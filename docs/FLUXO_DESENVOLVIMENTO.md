@@ -120,4 +120,4 @@ Quando esse PR é merged, o workflow [`deploy.yml`](../.github/workflows/deploy.
 | Workflow | Quando corre | O que faz |
 |---|---|---|
 | [`ci.yml`](../.github/workflows/ci.yml) | Push para `develop`, `feature/**` ou `bugfix/**`; PR para `develop` ou `main` | `npm ci`, lint e build |
-| [`deploy.yml`](../.github/workflows/deploy.yml) | Merge de um PR de `develop` para `main`, ou execução manual | Build com `BASE_PATH=/restaurante_website/` e publicação no GitHub Pages |
+| [`deploy.yml`](../.github/workflows/deploy.yml) | Push para `main` vindo do merge de um PR de `develop` (verificado pelo job `check`), ou execução manual | Build com `BASE_PATH=/restaurante_website/` e publicação no GitHub Pages |
