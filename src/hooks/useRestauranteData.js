@@ -23,7 +23,7 @@ export const useRestauranteData = () => {
         // Carregar arquivo de tradução correspondente
         const translatedData = await import(`../data/restaurante.${currentLang}.json`)
         setData(translatedData.default)
-      } catch (error) {
+      } catch {
         console.warn(`Arquivo de tradução para ${currentLang} não encontrado. Usando português.`)
         // Se não encontrar o arquivo traduzido, usa o português
         setData(restauranteDataPt)

@@ -4,7 +4,7 @@ import EmentaPage from './pages/EmentaPage'
 
 function App() {
   return (
-    <Router>
+    <Router basename={import.meta.env.BASE_URL.replace(/\/$/, '')}>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/ementa" element={<EmentaPage />} />
