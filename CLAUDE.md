@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project
 
-A restaurant website template ("La Bella Tavola"). It is a single-page app built with React 19, Vite 7, Tailwind CSS 3, React Router 7 and i18next. Code comments, data keys and the README are in Portuguese (`ementa` = menu, `preco` = price, `morada` = address, `horario` = opening hours). Production is GitHub Pages at https://josepedropina1803.github.io/restaurante_website/.
+A restaurant website template ("La Bella Tavola"). It is a single-page app built with React 19, Vite 7, Tailwind CSS 3, React Router 7 and i18next. Code comments, data keys and the README are in Portuguese (`ementa` = menu, `preco` = price, `morada` = address, `horario` = opening hours). This is a frontend-only project (no backend). GitHub Pages is the only deploy target: https://josepedropina1803.github.io/restaurante_website/. Don't add other hosting (Vercel, Netlify, etc.).
 
 ## Development workflow (mandatory)
 
@@ -19,7 +19,6 @@ Commits are authored by the user only (`José Pedro Pina`, set in this repo's lo
 - `.github/workflows/ci.yml` runs `npm ci`, lint and build on pushes to `develop`, `feature/**` and `bugfix/**`, and on PRs to `develop` and `main`.
 - `.github/workflows/deploy.yml` deploys to GitHub Pages only when a PR from `develop` is merged into `main` (or when it is run by hand).
 - Because Pages serves the site under `/restaurante_website/`, the deploy build sets `BASE_PATH`. `vite.config.js` uses it as `base`, and `BrowserRouter` takes its `basename` from `import.meta.env.BASE_URL`. The workflow also copies `index.html` to `404.html` so deep links like `/ementa` work. Locally the base is `/`. Don't hardcode absolute asset paths; use `<Link>` for routes.
-- `vercel.json` is left over from an earlier Vercel setup.
 
 ## Commands
 
