@@ -1,14 +1,14 @@
 {
   "nome": "La Bella Tavola",
-  "slogan": "Authentisches gastronomisches Erlebnis",
+  "slogan": "Portugiesische und italienische Küche in Lissabon",
   "descricao": [
-    "Willkommen im La Bella Tavola, wo kulinarische Tradition auf zeitgenössische Eleganz trifft. Seit 1995 sind wir stolz darauf, authentische Gerichte zu servieren, die mit Zutaten höchster Qualität zubereitet werden.",
-    "Unsere Küche kombiniert traditionelle, über Generationen weitergegebene Rezepte mit modernen Techniken und schafft so ein einzigartiges und unvergessliches gastronomisches Erlebnis.",
-    "Jedes Gericht wird von unserem Küchenchef sorgfältig zubereitet, um sicherzustellen, dass jede Mahlzeit ein Fest authentischer Aromen ist."
+    "La Bella Tavola wurde 1995 eröffnet. Seitdem servieren wir portugiesische und italienische Küche aus guten Zutaten.",
+    "Auf der Karte stehen Familienrezepte neben neueren Gerichten, zubereitet mit modernen Techniken.",
+    "Jeder Teller geht durch die Hände unseres Küchenchefs, bevor er auf den Tisch kommt."
   ],
   "contacto": {
     "telefone": "+351 21 123 4567",
-    "email": "reservas@labellatabola.pt",
+    "email": "reservas@labellatavola.pt",
     "morada": {
       "rua": "Rua da Gastronomia, 123",
       "codigoPostal": "1200-001",
@@ -16,42 +16,39 @@
       "pais": "Portugal"
     }
   },
-  "horario": {
-    "descricao": "Montag - Samstag: 12:00 - 23:00<br />Sonntag: 12:00 - 22:00"
-  },
+  "horario": [
+    {
+      "dias": "Montag bis Samstag",
+      "horas": "12:00 – 23:00"
+    },
+    {
+      "dias": "Sonntag",
+      "horas": "12:00 – 22:00"
+    }
+  ],
   "redesSociais": {
-    "facebook": "#",
-    "instagram": "#",
-    "tripadvisor": "#"
+    "facebook": "",
+    "instagram": "",
+    "tripadvisor": ""
   },
   "ementa": [
     {
-      "categoria": "Einträge",
+      "categoria": "Vorspeisen",
       "itens": [
         {
-          "nome": "Klassisches Bruschetta",
+          "nome": "Klassische Bruschetta",
           "descricao": "Frische Tomaten, Basilikum und Olivenöl auf italienischem Brot",
-          "preco": "€8.50"
+          "preco": 8.5
         },
         {
           "nome": "Rindercarpaccio",
-          "descricao": "Dünne Rindfleischscheiben mit Rucola und Parmesan",
-          "preco": "€12.00"
+          "descricao": "Hauchdünnes Rindfleisch mit Rucola und Parmesan",
+          "preco": 12.0
         },
         {
-          "nome": "Käsebrett",
+          "nome": "Käseplatte",
           "descricao": "Auswahl an portugiesischen und internationalen Käsesorten",
-          "preco": "€15.00"
-        }
-      ]
-    },
-    {
-      "categoria": "Tägliche Gerichte",
-      "itens": [
-        {
-          "nome": "Käsebrett",
-          "descricao": "Auswahl an portugiesischen und internationalen Käsesorten",
-          "preco": "€15.00"
+          "preco": 15.0
         }
       ]
     },
@@ -60,23 +57,23 @@
       "itens": [
         {
           "nome": "Bacalhau à Brás",
-          "descricao": "Geschnetzelter Kabeljau mit Strohkartoffeln und Eiern",
-          "preco": "€18.00"
+          "descricao": "Gezupfter Stockfisch mit Kartoffelstroh und Ei",
+          "preco": 18.0
         },
         {
-          "nome": "Oktopus in Lagareiro",
-          "descricao": "Gegrillter Oktopus mit Kartoffelpüree und Olivenöl",
-          "preco": "€24.00"
+          "nome": "Polvo à lagareiro",
+          "descricao": "Gebratener Oktopus mit gequetschten Kartoffeln, Knoblauch und Olivenöl",
+          "preco": 24.0
         },
         {
-          "nome": "Beef Wellington",
-          "descricao": "In Blätterteig gewickelte Lende mit Foie Gras",
-          "preco": "€28.00"
+          "nome": "Filet Wellington",
+          "descricao": "Rinderfilet im Blätterteig mit Foie gras",
+          "preco": 28.0
         },
         {
           "nome": "Pilzrisotto",
           "descricao": "Cremiges Risotto mit Waldpilzen",
-          "preco": "€16.00"
+          "preco": 16.0
         }
       ]
     },
@@ -84,19 +81,19 @@
       "categoria": "Desserts",
       "itens": [
         {
-          "nome": "Pastel de Nata",
-          "descricao": "Traditionelle portugiesische Vanillepudding-Torte",
-          "preco": "€3.50"
+          "nome": "Pastel de nata",
+          "descricao": "Das portugiesische Puddingtörtchen, frisch aus dem Ofen",
+          "preco": 3.5
         },
         {
           "nome": "Schokoladenmousse",
-          "descricao": "Handgemachte belgische Schokoladenmousse",
-          "preco": "€6.00"
+          "descricao": "Hausgemachte Mousse aus belgischer Schokolade",
+          "preco": 6.0
         },
         {
           "nome": "Tiramisù",
-          "descricao": "Italienischer Klassiker mit Kaffee und Mascarpone",
-          "preco": "€7.00"
+          "descricao": "Der italienische Klassiker mit Kaffee und Mascarpone",
+          "preco": 7.0
         }
       ]
     }
@@ -106,30 +103,29 @@
     "sobre": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80",
     "galeria": [
       {
-        "url": "https://images.unsplash.com/photo-1544025162-d76694265947?w=600&q=80",
-        "alt": "Gourmet-Gericht"
+        "url": "https://images.pexels.com/photos/39022480/pexels-photo-39022480.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "alt": "Gegrillter Oktopus mit Rucola"
       },
       {
-        "url": "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600&q=80",
-        "alt": "Restaurantumgebung"
+        "url": "https://images.pexels.com/photos/11044248/pexels-photo-11044248.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "alt": "Kabeljaufilet mit Gemüse"
       },
       {
-        "url": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=600&q=80",
-        "alt": "Besondere Gerichte"
+        "url": "https://images.pexels.com/photos/11190138/pexels-photo-11190138.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "alt": "Pilzrisotto mit Basilikum"
       },
       {
-        "url": "https://images.unsplash.com/photo-1572448862527-d3c904757de6?w=600&q=80",
-        "alt": "Desserts"
+        "url": "https://images.pexels.com/photos/12232125/pexels-photo-12232125.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "alt": "Frisch gebackene Pastéis de nata"
       },
       {
-        "url": "https://images.unsplash.com/photo-1551218808-94e220e084d2?w=600&q=80",
-        "alt": "Bar"
+        "url": "https://images.pexels.com/photos/6287310/pexels-photo-6287310.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "alt": "Frischer Nudelteig wird ausgerollt"
       },
       {
-        "url": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&q=80",
-        "alt": "Koch bereitet vor"
+        "url": "https://images.pexels.com/photos/36430091/pexels-photo-36430091.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "alt": "Der Küchenchef richtet einen Teller an"
       }
     ]
-  },
-  "ano": 2024
+  }
 }

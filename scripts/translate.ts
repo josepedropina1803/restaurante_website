@@ -11,8 +11,8 @@ type Json = string | number | boolean | null | Json[] | { [key: string]: Json }
 
 const LANGUAGES = ['en', 'es', 'fr', 'de'] as const
 const DATA_PATH = path.join(import.meta.dirname, '../src/data')
-const CAMPOS_FIXOS = new Set(['preco', 'telefone', 'email', 'codigoPostal', 'ano', 'url'])
-const NAO_TRADUZIR = /^(http|https|€|@|#|\+\d|<br)/
+const CAMPOS_FIXOS = new Set(['preco', 'horas', 'telefone', 'email', 'codigoPostal', 'url'])
+const NAO_TRADUZIR = /^(http|https|@|#|\+\d)/
 
 const esperar = (ms: number) =>
   new Promise((resolve) => {
@@ -79,9 +79,10 @@ async function gerarTraducoes() {
         slogan: await traduzir(original.slogan, lang),
         descricao: await traduzir(original.descricao, lang),
         contacto: original.contacto,
-        horario: {
-          descricao: await traduzir(original.horario.descricao, lang),
-        },
+        horario: (await traduzir(
+          original.horario as unknown as Json,
+          lang,
+        )) as unknown as Restaurante['horario'],
         redesSociais: original.redesSociais,
         ementa: (await traduzir(
           original.ementa as unknown as Json,
@@ -96,7 +97,6 @@ async function gerarTraducoes() {
             })),
           ),
         },
-        ano: original.ano,
       }
 
       const destino = path.join(DATA_PATH, `restaurante.${lang}.json`)

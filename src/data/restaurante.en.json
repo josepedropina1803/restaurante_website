@@ -1,14 +1,14 @@
 {
   "nome": "La Bella Tavola",
-  "slogan": "Authentic Gastronomic Experience",
+  "slogan": "Portuguese and Italian cooking in Lisbon",
   "descricao": [
-    "Welcome to La Bella Tavola, where culinary tradition meets contemporary elegance. Since 1995, we have been proud to serve authentic dishes prepared with the highest quality ingredients.",
-    "Our cuisine combines traditional recipes passed down through generations with modern techniques, creating a unique and memorable gastronomic experience.",
-    "Each dish is carefully crafted by our executive chef, ensuring each meal is a celebration of authentic flavors."
+    "La Bella Tavola opened in 1995. Since then, we have served Portuguese and Italian cooking made with good ingredients.",
+    "The menu puts family recipes next to newer dishes, prepared with modern techniques.",
+    "Every plate passes through our chef's hands before it reaches the table."
   ],
   "contacto": {
     "telefone": "+351 21 123 4567",
-    "email": "reservas@labellatabola.pt",
+    "email": "reservas@labellatavola.pt",
     "morada": {
       "rua": "Rua da Gastronomia, 123",
       "codigoPostal": "1200-001",
@@ -16,67 +16,64 @@
       "pais": "Portugal"
     }
   },
-  "horario": {
-    "descricao": "Monday - Saturday: 12:00 - 23:00<br />Sunday: 12:00 - 22:00"
-  },
+  "horario": [
+    {
+      "dias": "Monday to Saturday",
+      "horas": "12:00 – 23:00"
+    },
+    {
+      "dias": "Sunday",
+      "horas": "12:00 – 22:00"
+    }
+  ],
   "redesSociais": {
-    "facebook": "#",
-    "instagram": "#",
-    "tripadvisor": "#"
+    "facebook": "",
+    "instagram": "",
+    "tripadvisor": ""
   },
   "ementa": [
     {
-      "categoria": "Entries",
+      "categoria": "Starters",
       "itens": [
         {
-          "nome": "Classic Bruschetta",
+          "nome": "Classic bruschetta",
           "descricao": "Fresh tomato, basil and olive oil on Italian bread",
-          "preco": "€8.50"
+          "preco": 8.5
         },
         {
-          "nome": "Beef Carpaccio",
-          "descricao": "Thin slices of beef with arugula and parmesan",
-          "preco": "€12.00"
+          "nome": "Beef carpaccio",
+          "descricao": "Thin slices of beef with rocket and parmesan",
+          "preco": 12.0
         },
         {
-          "nome": "Cheese Board",
-          "descricao": "Selection of Portuguese and international cheeses",
-          "preco": "€15.00"
+          "nome": "Cheese board",
+          "descricao": "A selection of Portuguese and international cheeses",
+          "preco": 15.0
         }
       ]
     },
     {
-      "categoria": "Daily Dishes",
-      "itens": [
-        {
-          "nome": "Cheese Board",
-          "descricao": "Selection of Portuguese and international cheeses",
-          "preco": "€15.00"
-        }
-      ]
-    },
-    {
-      "categoria": "Main Dishes",
+      "categoria": "Main courses",
       "itens": [
         {
           "nome": "Bacalhau à Brás",
-          "descricao": "Shredded cod with straw potatoes and eggs",
-          "preco": "€18.00"
+          "descricao": "Shredded salt cod with matchstick potatoes and egg",
+          "preco": 18.0
         },
         {
-          "nome": "Octopus in Lagareiro",
-          "descricao": "Grilled octopus with mashed potatoes and olive oil",
-          "preco": "€24.00"
+          "nome": "Polvo à lagareiro",
+          "descricao": "Roast octopus with crushed potatoes, garlic and olive oil",
+          "preco": 24.0
         },
         {
           "nome": "Beef Wellington",
-          "descricao": "Loin wrapped in puff pastry with foie gras",
-          "preco": "€28.00"
+          "descricao": "Beef fillet in puff pastry with foie gras",
+          "preco": 28.0
         },
         {
-          "nome": "Mushroom Risotto",
+          "nome": "Mushroom risotto",
           "descricao": "Creamy risotto with wild mushrooms",
-          "preco": "€16.00"
+          "preco": 16.0
         }
       ]
     },
@@ -84,19 +81,19 @@
       "categoria": "Desserts",
       "itens": [
         {
-          "nome": "Pastel de Nata",
-          "descricao": "Traditional Portuguese custard tart",
-          "preco": "€3.50"
+          "nome": "Pastel de nata",
+          "descricao": "The Portuguese custard tart, fresh from the oven",
+          "preco": 3.5
         },
         {
-          "nome": "Chocolate Mousse",
-          "descricao": "Handmade Belgian chocolate mousse",
-          "preco": "€6.00"
+          "nome": "Chocolate mousse",
+          "descricao": "House-made Belgian chocolate mousse",
+          "preco": 6.0
         },
         {
           "nome": "Tiramisù",
-          "descricao": "Italian classic with coffee and mascarpone",
-          "preco": "€7.00"
+          "descricao": "The Italian classic, with coffee and mascarpone",
+          "preco": 7.0
         }
       ]
     }
@@ -106,30 +103,29 @@
     "sobre": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80",
     "galeria": [
       {
-        "url": "https://images.unsplash.com/photo-1544025162-d76694265947?w=600&q=80",
-        "alt": "Gourmet dish"
+        "url": "https://images.pexels.com/photos/39022480/pexels-photo-39022480.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "alt": "Grilled octopus with rocket"
       },
       {
-        "url": "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600&q=80",
-        "alt": "Restaurant environment"
+        "url": "https://images.pexels.com/photos/11044248/pexels-photo-11044248.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "alt": "Cod loin with vegetables"
       },
       {
-        "url": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=600&q=80",
-        "alt": "Special dishes"
+        "url": "https://images.pexels.com/photos/11190138/pexels-photo-11190138.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "alt": "Mushroom risotto with basil"
       },
       {
-        "url": "https://images.unsplash.com/photo-1572448862527-d3c904757de6?w=600&q=80",
-        "alt": "Desserts"
+        "url": "https://images.pexels.com/photos/12232125/pexels-photo-12232125.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "alt": "Freshly baked pastéis de nata"
       },
       {
-        "url": "https://images.unsplash.com/photo-1551218808-94e220e084d2?w=600&q=80",
-        "alt": "Bar"
+        "url": "https://images.pexels.com/photos/6287310/pexels-photo-6287310.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "alt": "Fresh pasta being rolled out"
       },
       {
-        "url": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&q=80",
-        "alt": "Chef preparing"
+        "url": "https://images.pexels.com/photos/36430091/pexels-photo-36430091.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "alt": "The chef plating a dish"
       }
     ]
-  },
-  "ano": 2024
+  }
 }

@@ -1,14 +1,14 @@
 {
   "nome": "La Bella Tavola",
-  "slogan": "Experiência Gastronómica Autêntica",
+  "slogan": "Cozinha portuguesa e italiana em Lisboa",
   "descricao": [
-    "Bem-vindo ao La Bella Tavola, onde a tradição culinária encontra a elegância contemporânea. Desde 1995, temos o orgulho de servir pratos autênticos preparados com ingredientes da mais alta qualidade.",
-    "Nossa cozinha combina receitas tradicionais transmitidas através de gerações com técnicas modernas, criando uma experiência gastronómica única e memorável.",
-    "Cada prato é cuidadosamente elaborado pelo nosso chef executivo, garantindo que cada refeição seja uma celebração de sabores autênticos."
+    "O La Bella Tavola abriu em 1995. Desde então, servimos cozinha portuguesa e italiana feita com bons ingredientes.",
+    "Na ementa há receitas de família ao lado de pratos novos, preparados com técnicas atuais.",
+    "Cada prato passa pelas mãos do nosso chef antes de chegar à mesa."
   ],
   "contacto": {
     "telefone": "+351 21 123 4567",
-    "email": "reservas@labellatabola.pt",
+    "email": "reservas@labellatavola.pt",
     "morada": {
       "rua": "Rua da Gastronomia, 123",
       "codigoPostal": "1200-001",
@@ -16,67 +16,64 @@
       "pais": "Portugal"
     }
   },
-  "horario": {
-    "descricao": "Segunda - Sábado: 12:00 - 23:00<br />Domingo: 12:00 - 22:00"
-  },
+  "horario": [
+    {
+      "dias": "Segunda a sábado",
+      "horas": "12:00 – 23:00"
+    },
+    {
+      "dias": "Domingo",
+      "horas": "12:00 – 22:00"
+    }
+  ],
   "redesSociais": {
-    "facebook": "#",
-    "instagram": "#",
-    "tripadvisor": "#"
+    "facebook": "",
+    "instagram": "",
+    "tripadvisor": ""
   },
   "ementa": [
     {
       "categoria": "Entradas",
       "itens": [
         {
-          "nome": "Bruschetta Clássica",
+          "nome": "Bruschetta clássica",
           "descricao": "Tomate fresco, manjericão e azeite sobre pão italiano",
-          "preco": "€8.50"
+          "preco": 8.5
         },
         {
-          "nome": "Carpaccio de Vaca",
+          "nome": "Carpaccio de vaca",
           "descricao": "Finas fatias de carne com rúcula e parmesão",
-          "preco": "€12.00"
+          "preco": 12.0
         },
         {
-          "nome": "Tábua de Queijos",
-          "descricao": "Seleção de queijos portugueses e internacionais",
-          "preco": "€15.00"
+          "nome": "Tábua de queijos",
+          "descricao": "Seleção de queijos portugueses e de outros países",
+          "preco": 15.0
         }
       ]
     },
     {
-      "categoria": "Pratos Diários",
-      "itens": [
-        {
-          "nome": "Tábua de Queijos",
-          "descricao": "Seleção de queijos portugueses e internacionais",
-          "preco": "€15.00"
-        }
-      ]
-    },
-    {
-      "categoria": "Pratos Principais",
+      "categoria": "Pratos principais",
       "itens": [
         {
           "nome": "Bacalhau à Brás",
-          "descricao": "Bacalhau desfiado com batata palha e ovos",
-          "preco": "€18.00"
+          "descricao": "Bacalhau desfiado com batata palha e ovo",
+          "preco": 18.0
         },
         {
-          "nome": "Polvo à Lagareiro",
-          "descricao": "Polvo grelhado com batatas a murro e azeite",
-          "preco": "€24.00"
+          "nome": "Polvo à lagareiro",
+          "descricao": "Polvo assado com batatas a murro, alho e azeite",
+          "preco": 24.0
         },
         {
           "nome": "Bife Wellington",
-          "descricao": "Lombo envolto em massa folhada com foie gras",
-          "preco": "€28.00"
+          "descricao": "Lombo de vaca em massa folhada com foie gras",
+          "preco": 28.0
         },
         {
-          "nome": "Risotto de Cogumelos",
-          "descricao": "Cremoso risotto com cogumelos selvagens",
-          "preco": "€16.00"
+          "nome": "Risotto de cogumelos",
+          "descricao": "Risotto cremoso com cogumelos silvestres",
+          "preco": 16.0
         }
       ]
     },
@@ -84,19 +81,19 @@
       "categoria": "Sobremesas",
       "itens": [
         {
-          "nome": "Pastel de Nata",
-          "descricao": "Tradicional pastel de nata português",
-          "preco": "€3.50"
+          "nome": "Pastel de nata",
+          "descricao": "O tradicional, acabado de sair do forno",
+          "preco": 3.5
         },
         {
-          "nome": "Mousse de Chocolate",
-          "descricao": "Mousse artesanal de chocolate belga",
-          "preco": "€6.00"
+          "nome": "Mousse de chocolate",
+          "descricao": "Mousse caseira de chocolate belga",
+          "preco": 6.0
         },
         {
           "nome": "Tiramisù",
-          "descricao": "Clássico italiano com café e mascarpone",
-          "preco": "€7.00"
+          "descricao": "O clássico italiano, com café e mascarpone",
+          "preco": 7.0
         }
       ]
     }
@@ -106,30 +103,29 @@
     "sobre": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80",
     "galeria": [
       {
-        "url": "https://images.unsplash.com/photo-1544025162-d76694265947?w=600&q=80",
-        "alt": "Prato gourmet"
+        "url": "https://images.pexels.com/photos/39022480/pexels-photo-39022480.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "alt": "Polvo grelhado com rúcula"
       },
       {
-        "url": "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600&q=80",
-        "alt": "Ambiente do restaurante"
+        "url": "https://images.pexels.com/photos/11044248/pexels-photo-11044248.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "alt": "Lombo de bacalhau com legumes"
       },
       {
-        "url": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=600&q=80",
-        "alt": "Pratos especiais"
+        "url": "https://images.pexels.com/photos/11190138/pexels-photo-11190138.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "alt": "Risotto de cogumelos com manjericão"
       },
       {
-        "url": "https://images.unsplash.com/photo-1572448862527-d3c904757de6?w=600&q=80",
-        "alt": "Sobremesas"
+        "url": "https://images.pexels.com/photos/12232125/pexels-photo-12232125.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "alt": "Pastéis de nata acabados de fazer"
       },
       {
-        "url": "https://images.unsplash.com/photo-1551218808-94e220e084d2?w=600&q=80",
-        "alt": "Bar"
+        "url": "https://images.pexels.com/photos/6287310/pexels-photo-6287310.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "alt": "Massa fresca a ser estendida"
       },
       {
-        "url": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&q=80",
-        "alt": "Chef preparando"
+        "url": "https://images.pexels.com/photos/36430091/pexels-photo-36430091.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "alt": "O chef a empratar"
       }
     ]
-  },
-  "ano": 2024
+  }
 }

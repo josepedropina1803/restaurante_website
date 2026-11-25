@@ -8,29 +8,33 @@
     "openMenu": "Abrir menu",
     "closeMenu": "Fechar menu"
   },
+  "language": {
+    "label": "Idioma"
+  },
   "hero": {
-    "viewMenu": "Ver Ementa"
+    "viewMenu": "Ver a ementa"
   },
   "about": {
-    "subtitle": "Nossa História",
-    "title": "Tradição e Sabor"
+    "subtitle": "A nossa história",
+    "title": "Tradição e sabor",
+    "imageAlt": "Prato servido na sala"
   },
   "menu": {
-    "subtitle": "Nossa Ementa",
-    "title": "Delícias Culinárias",
-    "viewFullMenu": "Ver ementa completa (apenas)"
+    "subtitle": "A nossa ementa",
+    "title": "O que servimos",
+    "viewFullMenu": "Ver a ementa completa"
   },
   "gallery": {
     "subtitle": "Galeria",
-    "title": "Momentos Especiais"
+    "title": "Da cozinha para a mesa"
   },
   "contact": {
     "subtitle": "Contacto",
     "title": "Visite-nos",
-    "location": "Localização",
+    "location": "Morada",
     "hours": "Horário",
     "reservations": "Reservas",
-    "makeReservation": "Fazer Reserva"
+    "makeReservation": "Reservar mesa"
   },
   "footer": {
     "rights": "Todos os direitos reservados"

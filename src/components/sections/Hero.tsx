@@ -15,6 +15,7 @@ export function Hero({ restaurante }: HeroProps) {
       <img
         src={restaurante.imagens.hero}
         alt=""
+        fetchPriority="high"
         className="absolute inset-0 size-full object-cover"
       />
       <div className="absolute inset-0 bg-black/50" />

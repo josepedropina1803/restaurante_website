@@ -14,7 +14,7 @@ export function Contact({ restaurante }: ContactProps) {
   const telefoneHref = `tel:${contacto.telefone.replace(/\s/g, '')}`
 
   return (
-    <section id="contact" className="bg-dark-brown py-20 text-cream">
+    <section id="contact" className="scroll-mt-20 bg-dark-brown py-20 text-cream">
       <div className="container mx-auto px-6">
         <SectionHeading subtitle={t('contact.subtitle')} title={t('contact.title')} tone="dark" />
 
@@ -35,8 +35,13 @@ export function Contact({ restaurante }: ContactProps) {
               ⏰
             </div>
             <h3 className="mb-2 font-serif text-xl">{t('contact.hours')}</h3>
-            {/* O horário ainda vem com <br /> nos dados; passa a lista na issue de limpeza. */}
-            <p className="text-gray-300" dangerouslySetInnerHTML={{ __html: horario.descricao }} />
+            <ul className="text-gray-300">
+              {horario.map((linha) => (
+                <li key={linha.dias}>
+                  {linha.dias} · {linha.horas}
+                </li>
+              ))}
+            </ul>
           </div>
           <div>
             <div className="mb-4 text-4xl text-gold" aria-hidden="true">
@@ -44,9 +49,13 @@ export function Contact({ restaurante }: ContactProps) {
             </div>
             <h3 className="mb-2 font-serif text-xl">{t('contact.reservations')}</h3>
             <p className="text-gray-300">
-              {contacto.telefone}
+              <a href={telefoneHref} className="transition hover:text-gold">
+                {contacto.telefone}
+              </a>
               <br />
-              {contacto.email}
+              <a href={`mailto:${contacto.email}`} className="transition hover:text-gold">
+                {contacto.email}
+              </a>
             </p>
           </div>
         </div>

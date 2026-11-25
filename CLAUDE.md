@@ -74,12 +74,12 @@ There is no `tailwind.config.js` (Tailwind 4).
    - `restaurante.<lang>.json` holds one full translated copy per language, with the same shape.
    - `src/hooks/useRestauranteData.ts` watches `i18n.language` and lazy-loads the matching file. Each import is type-checked against `Restaurante`. Pages and sections read every piece of content from this hook, never by importing the JSON directly.
 
-The README is out of date. It says each field has per-language keys and that the project uses JS and Tailwind 3; the real model is one file per language, TypeScript and Tailwind 4.
+Data details: `preco` is a number formatted per language with `formatPreco` (`src/lib/format.ts`, using each language's `locale` from `src/lib/languages.ts`); `horario` is a list of `{ dias, horas }`; an empty `redesSociais` URL hides that link; the footer year is computed. The chosen language is saved in `localStorage` (key `idioma`, wrapped in try/catch) and mirrored to `<html lang>` in `src/i18n.ts`.
 
 **Translation script** (`scripts/translate.ts`, run with `tsx`): it machine-translates `restaurante.json` with the unofficial `@vitalets/google-translate-api`, which can be rate-limited or fail. It then overwrites the four language files.
 
 - It rebuilds each output from an explicit list of top-level fields. If you add a new top-level field, you must also add it to the script.
-- It skips the keys `preco`, `telefone`, `email`, `codigoPostal`, `ano` and `url`, plus strings that start with `http`, `€`, `@`, `#`, `+<digit>` or `<br`.
-- Running it overwrites any hand-edited translations.
+- It skips the keys `preco`, `horas`, `telefone`, `email`, `codigoPostal` and `url`, plus strings that start with `http`, `@`, `#` or `+<digit>`.
+- Running it overwrites any hand-edited translations. The current EN/ES/FR/DE files were reviewed by hand, so prefer editing them directly over re-running the script.
 
 **Routes** (`src/App.tsx`): `/` is `HomePage`, and `/ementa` is `EmentaPage`, which shows only the menu.
