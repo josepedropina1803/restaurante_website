@@ -117,6 +117,24 @@ gh pr create --base main --head develop --title "Release: <resumo>"
 
 Quando esse PR é merged, o workflow [`deploy.yml`](../.github/workflows/deploy.yml) faz o build e publica em https://josepedropina1803.github.io/restaurante_website/.
 
+## Comparar main e develop com Docker
+
+Para ver lado a lado o que está em produção e o que está em desenvolvimento, há dois containers locais. Precisam do Docker Desktop a correr.
+
+```bash
+docker compose up -d --build   # constrói e arranca os dois
+docker compose down            # pára e remove
+```
+
+| Container | Branch | Endereço |
+|---|---|---|
+| `prod` | `main` | http://localhost:8090 |
+| `develop` | `develop` | http://localhost:8091 |
+
+Cada imagem vai buscar o código da sua branch ao GitHub ([`docker/Dockerfile`](../docker/Dockerfile)). Por isso mostra o que já tem push, não as alterações locais. Para atualizar depois de um merge, corre outra vez `docker compose up -d --build`.
+
+Isto não é um deploy, só corre no teu computador. Para validar uma feature (passo 10), continua a usar `npm run dev`.
+
 ## CI/CD
 
 O projeto é só frontend e o único deploy é o GitHub Pages.
