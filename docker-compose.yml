@@ -15,7 +15,7 @@ services:
         BRANCH: main
     image: restaurante-website:main
     ports:
-      - "8090:80"
+      - '8090:80'
     restart: unless-stopped
 
   develop:
@@ -25,5 +25,5 @@ services:
         BRANCH: develop
     image: restaurante-website:develop
     ports:
-      - "8091:80"
+      - '8091:80'
     restart: unless-stopped

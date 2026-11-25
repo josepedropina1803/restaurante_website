@@ -1,6 +1,6 @@
 name: CI
 
-# Valida o código (lint + build) em cada push para develop ou para branches
+# Valida o código (lint, formatação, typecheck e build) em cada push para develop ou para branches
 # de feature/bugfix, e em cada pull request para develop ou main.
 on:
   push:
@@ -34,6 +34,12 @@ jobs:
 
       - name: Lint
         run: npm run lint
+
+      - name: Formatação (Prettier)
+        run: npm run format:check
+
+      - name: Typecheck
+        run: npm run typecheck
 
       - name: Build
         run: npm run build

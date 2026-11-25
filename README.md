@@ -28,11 +28,13 @@ Website SPA (Single Page Application) moderno e elegante para restaurantes, dese
 ## Como Executar
 
 1. Instalar dependências:
+
 ```bash
 npm install
 ```
 
 2. Iniciar servidor de desenvolvimento:
+
 ```bash
 npm run dev
 ```
@@ -42,38 +44,47 @@ npm run dev
 ## Personalização
 
 ### Arquivo de Configuração JSON
+
 Todos os dados do restaurante estão centralizados no arquivo `src/data/restaurante.json`. Este ficheiro permite personalizar facilmente:
 
 **Informações Básicas:**
+
 - Nome do restaurante
 - Slogan
 - Descrição e história
 
 **Contacto:**
+
 - Telefone
 - Email
 - Morada completa
 
 **Horário:**
+
 - Horários de funcionamento
 
 **Ementa:**
+
 - Categorias (Entradas, Pratos Principais, Sobremesas)
 - Itens com nome, descrição e preço
 
 **Imagens:**
+
 - Imagem hero (banner principal)
 - Imagem da seção "Sobre"
 - Galeria de fotos
 
 **Navegação e Redes Sociais:**
+
 - Links de navegação
 - Links para redes sociais
 
 Para personalizar o website, edite apenas o arquivo `src/data/restaurante.json` - não é necessário modificar o código React!
 
 ### Cores
+
 As cores principais estão definidas em `tailwind.config.js`:
+
 - `gold`: #D4AF37 (dourado)
 - `dark-brown`: #2C1810 (castanho escuro)
 - `cream`: #F5F5DC (creme)
@@ -81,6 +92,7 @@ As cores principais estão definidas em `tailwind.config.js`:
 ## Internacionalização (i18n)
 
 O website suporta 5 idiomas:
+
 - 🇵🇹 Português (padrão)
 - 🇬🇧 Inglês
 - 🇪🇸 Espanhol
@@ -88,10 +100,13 @@ O website suporta 5 idiomas:
 - 🇩🇪 Alemão
 
 ### Seletor de Idioma
+
 O seletor de idioma aparece no canto superior direito do header em todas as páginas. Clique numa bandeira para mudar o idioma.
 
 ### Adicionar ou Editar Traduções
+
 As traduções estão nos arquivos da pasta `src/locales/`:
+
 - `pt.json` - Português
 - `en.json` - Inglês
 - `es.json` - Espanhol
@@ -99,15 +114,18 @@ As traduções estão nos arquivos da pasta `src/locales/`:
 - `de.json` - Alemão
 
 Para adicionar novas traduções:
+
 1. Edite o arquivo JSON do idioma correspondente
 2. Use a mesma estrutura de chaves para todos os idiomas
 3. As alterações serão refletidas automaticamente
 
 **Nota:** As traduções aplicam-se a:
+
 1. **Elementos da interface** (navegação, títulos, botões) - nos arquivos `src/locales/*.json`
 2. **Dados do restaurante** (slogan, descrição, ementa, etc.) - no arquivo `src/data/restaurante.json`
 
 ### Traduzir Dados do Restaurante
+
 O arquivo `src/data/restaurante.json` está estruturado para suportar múltiplos idiomas. Para adicionar traduções:
 
 1. Localize o campo que deseja traduzir (ex: `slogan`, `descricao`, `ementa`)
@@ -115,6 +133,7 @@ O arquivo `src/data/restaurante.json` está estruturado para suportar múltiplos
 3. Adicione/edite o conteúdo para cada idioma
 
 **Exemplo da ementa:**
+
 ```json
 "ementa": {
   "pt": [
@@ -171,6 +190,7 @@ ementa-template/
 ## Deploy
 
 Para fazer build de produção:
+
 ```bash
 npm run build
 ```

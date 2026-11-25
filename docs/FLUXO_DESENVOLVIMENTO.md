@@ -4,12 +4,12 @@ Este documento define como qualquer alteração chega a produção, seja feita p
 
 ## Branches
 
-| Branch | Função |
-|---|---|
-| `main` | Produção. Só recebe pull requests vindos de `develop`. Cada merge publica o site. |
-| `develop` | Integração. Todas as features e correções entram aqui por pull request. |
-| `feature/<nº-issue>-<descricao>` | Uma funcionalidade nova, criada a partir de `develop`. |
-| `bugfix/<nº-issue>-<descricao>` | A correção de um bug, criada a partir de `develop`. |
+| Branch                           | Função                                                                            |
+| -------------------------------- | --------------------------------------------------------------------------------- |
+| `main`                           | Produção. Só recebe pull requests vindos de `develop`. Cada merge publica o site. |
+| `develop`                        | Integração. Todas as features e correções entram aqui por pull request.           |
+| `feature/<nº-issue>-<descricao>` | Uma funcionalidade nova, criada a partir de `develop`.                            |
+| `bugfix/<nº-issue>-<descricao>`  | A correção de um bug, criada a partir de `develop`.                               |
 
 A descrição vai em minúsculas e com hífens. Exemplos: `feature/12-reservas-online`, `bugfix/15-menu-mobile`.
 
@@ -21,19 +21,24 @@ Tarefa → Plano → Revisão do plano → Issue → Branch → Desenvolvimento
 ```
 
 ### 1. Tarefa dada pelo utilizador
+
 O utilizador descreve o que quer. Se houver ambiguidades, esclarecem-se antes de avançar.
 
 ### 2. Plano
+
 Escreve-se um plano com:
+
 - os ficheiros a alterar;
 - a abordagem;
 - os riscos;
 - a forma de testar.
 
 ### 3. Revisão do plano
+
 O utilizador revê o plano e aprova-o, ou pede alterações. **Nada é implementado sem o plano estar aprovado.**
 
 ### 4. Criação da issue (work item ou bug)
+
 Cria-se uma issue no GitHub com o resumo do plano aprovado:
 
 ```bash
@@ -44,6 +49,7 @@ gh issue create --title "<título>" --body "<descrição e passos para reproduzi
 Toma-se nota do número da issue (`#N`).
 
 ### 5. Branch filha de develop
+
 A branch tem o nome da feature e o número da issue:
 
 ```bash
@@ -53,29 +59,37 @@ git checkout -b feature/<N>-<descricao>   # ou bugfix/<N>-<descricao>
 ```
 
 ### 6. Desenvolvimento da feature
+
 Implementa-se o que foi aprovado no plano, sem alterações fora desse âmbito. Se aparecer trabalho extra, cria-se outra issue para ele.
 
 ### 7. Revisão do código
+
 Revê-se o diff completo (`git diff develop...`) à procura de:
+
 - bugs;
 - código morto;
 - traduções em falta nos 5 idiomas;
 - regressões.
 
 ### 8. Testes ao código
+
 O projeto não tem testes automáticos. Antes de avançar, tudo isto tem de passar:
 
 ```bash
 npm run lint
+npm run typecheck
+npm run format:check
 npm run build
 ```
 
-Depois testa-se manualmente, no browser, o que foi alterado, incluindo:
+Depois verifica-se no browser, com o MCP do Playwright, que os componentes estão bem e fazem sentido, incluindo:
+
 - a mudança de idioma;
 - a vista mobile;
 - as rotas `/` e `/ementa`.
 
 ### 9. Commit e push para a branch
+
 As mensagens de commit são claras e referem a issue:
 
 ```bash
@@ -89,6 +103,7 @@ O push corre a CI (lint + build) na branch.
 Os commits ficam sempre em nome do autor do repositório (José Pedro Pina). Não se adicionam linhas `Co-Authored-By` nem outra atribuição ao Claude, nem nos commits nem nos PRs.
 
 ### 10. Correr localmente para validação do utilizador
+
 Arranca-se o servidor na branch para o utilizador validar as alterações:
 
 ```bash
@@ -126,9 +141,9 @@ docker compose up -d --build   # constrói e arranca os dois
 docker compose down            # pára e remove
 ```
 
-| Container | Branch | Endereço |
-|---|---|---|
-| `prod` | `main` | http://localhost:8090 |
+| Container | Branch    | Endereço              |
+| --------- | --------- | --------------------- |
+| `prod`    | `main`    | http://localhost:8090 |
 | `develop` | `develop` | http://localhost:8091 |
 
 Cada imagem vai buscar o código da sua branch ao GitHub ([`docker/Dockerfile`](../docker/Dockerfile)). Por isso mostra o que já tem push, não as alterações locais. Para atualizar depois de um merge, corre outra vez `docker compose up -d --build`.
@@ -139,7 +154,7 @@ Isto não é um deploy, só corre no teu computador. Para validar uma feature (p
 
 O projeto é só frontend e o único deploy é o GitHub Pages.
 
-| Workflow | Quando corre | O que faz |
-|---|---|---|
-| [`ci.yml`](../.github/workflows/ci.yml) | Push para `develop`, `feature/**` ou `bugfix/**`; PR para `develop` ou `main` | `npm ci`, lint e build |
+| Workflow                                        | Quando corre                                                                                            | O que faz                                                                |
+| ----------------------------------------------- | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| [`ci.yml`](../.github/workflows/ci.yml)         | Push para `develop`, `feature/**` ou `bugfix/**`; PR para `develop` ou `main`                           | `npm ci`, lint e build                                                   |
 | [`deploy.yml`](../.github/workflows/deploy.yml) | Push para `main` vindo do merge de um PR de `develop` (verificado pelo job `check`), ou execução manual | Build com `BASE_PATH=/restaurante_website/` e publicação no GitHub Pages |

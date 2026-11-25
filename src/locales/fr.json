@@ -4,7 +4,9 @@
     "about": "À Propos",
     "menu": "Menu",
     "gallery": "Galerie",
-    "contact": "Contact"
+    "contact": "Contact",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu"
   },
   "hero": {
     "viewMenu": "Voir le Menu"
