@@ -119,6 +119,8 @@ Quando esse PR é merged, o workflow [`deploy.yml`](../.github/workflows/deploy.
 
 ## CI/CD
 
+O projeto é só frontend e o único deploy é o GitHub Pages.
+
 | Workflow | Quando corre | O que faz |
 |---|---|---|
 | [`ci.yml`](../.github/workflows/ci.yml) | Push para `develop`, `feature/**` ou `bugfix/**`; PR para `develop` ou `main` | `npm ci`, lint e build |
