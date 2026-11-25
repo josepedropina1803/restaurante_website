@@ -1,34 +1,40 @@
 {
   "nav": {
-    "home": "Startseite",
-    "about": "Über Uns",
+    "home": "Start",
+    "about": "Über uns",
     "menu": "Speisekarte",
     "gallery": "Galerie",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "openMenu": "Menü öffnen",
+    "closeMenu": "Menü schließen"
+  },
+  "language": {
+    "label": "Sprache"
   },
   "hero": {
-    "viewMenu": "Speisekarte Ansehen"
+    "viewMenu": "Speisekarte ansehen"
   },
   "about": {
     "subtitle": "Unsere Geschichte",
-    "title": "Tradition und Geschmack"
+    "title": "Tradition und Geschmack",
+    "imageAlt": "Ein im Restaurant serviertes Gericht"
   },
   "menu": {
     "subtitle": "Unsere Speisekarte",
-    "title": "Kulinarische Köstlichkeiten",
-    "viewFullMenu": "Vollständige Speisekarte ansehen (nur)"
+    "title": "Was wir servieren",
+    "viewFullMenu": "Vollständige Speisekarte ansehen"
   },
   "gallery": {
     "subtitle": "Galerie",
-    "title": "Besondere Momente"
+    "title": "Aus der Küche an den Tisch"
   },
   "contact": {
     "subtitle": "Kontakt",
-    "title": "Besuchen Sie Uns",
-    "location": "Standort",
+    "title": "Besuchen Sie uns",
+    "location": "Adresse",
     "hours": "Öffnungszeiten",
     "reservations": "Reservierungen",
-    "makeReservation": "Reservierung Machen"
+    "makeReservation": "Tisch reservieren"
   },
   "footer": {
     "rights": "Alle Rechte vorbehalten"

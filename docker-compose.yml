@@ -1,0 +1,29 @@
+# Dois containers locais para comparar produção (main) com desenvolvimento (develop).
+# Cada um constrói o código da sua branch diretamente do GitHub.
+#
+#   docker compose up -d --build   # constrói e arranca (atualiza para o estado atual das branches)
+#   docker compose down            # pára e remove
+#
+# prod    → http://localhost:8090
+# develop → http://localhost:8091
+
+services:
+  prod:
+    build:
+      context: ./docker
+      args:
+        BRANCH: main
+    image: restaurante-website:main
+    ports:
+      - '8090:80'
+    restart: unless-stopped
+
+  develop:
+    build:
+      context: ./docker
+      args:
+        BRANCH: develop
+    image: restaurante-website:develop
+    ports:
+      - '8091:80'
+    restart: unless-stopped

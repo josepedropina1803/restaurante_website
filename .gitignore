@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Capturas e snapshots do MCP do Playwright
+.playwright-mcp/

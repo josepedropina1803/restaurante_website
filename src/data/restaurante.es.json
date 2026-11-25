@@ -1,14 +1,14 @@
 {
   "nome": "La Bella Tavola",
-  "slogan": "Auténtica Experiencia Gastronómica",
+  "slogan": "Cocina portuguesa e italiana en Lisboa",
   "descricao": [
-    "Bienvenido a La Bella Tavola, donde la tradición culinaria se combina con la elegancia contemporánea. Desde 1995, estamos orgullosos de servir platos auténticos preparados con ingredientes de la más alta calidad.",
-    "Nuestra cocina combina recetas tradicionales transmitidas de generación en generación con técnicas modernas, creando una experiencia gastronómica única e inolvidable.",
-    "Cada plato es cuidadosamente elaborado por nuestro chef ejecutivo, lo que garantiza que cada comida sea una celebración de sabores auténticos."
+    "La Bella Tavola abrió en 1995. Desde entonces servimos cocina portuguesa e italiana hecha con buenos ingredientes.",
+    "En la carta hay recetas de familia junto a platos nuevos, preparados con técnicas actuales.",
+    "Cada plato pasa por las manos de nuestro chef antes de llegar a la mesa."
   ],
   "contacto": {
     "telefone": "+351 21 123 4567",
-    "email": "reservas@labellatabola.pt",
+    "email": "reservas@labellatavola.pt",
     "morada": {
       "rua": "Rua da Gastronomia, 123",
       "codigoPostal": "1200-001",
@@ -16,67 +16,64 @@
       "pais": "Portugal"
     }
   },
-  "horario": {
-    "descricao": "Lunes - Sábado: 12:00 - 23:00<br />Domingo: 12:00 - 22:00"
-  },
+  "horario": [
+    {
+      "dias": "Lunes a sábado",
+      "horas": "12:00 – 23:00"
+    },
+    {
+      "dias": "Domingo",
+      "horas": "12:00 – 22:00"
+    }
+  ],
   "redesSociais": {
-    "facebook": "#",
-    "instagram": "#",
-    "tripadvisor": "#"
+    "facebook": "",
+    "instagram": "",
+    "tripadvisor": ""
   },
   "ementa": [
     {
-      "categoria": "Entradas",
+      "categoria": "Entrantes",
       "itens": [
         {
           "nome": "Bruschetta clásica",
           "descricao": "Tomate fresco, albahaca y aceite de oliva sobre pan italiano",
-          "preco": "€8.50"
+          "preco": 8.5
         },
         {
           "nome": "Carpaccio de ternera",
-          "descricao": "Finas lonchas de ternera con rúcula y parmesano",
-          "preco": "€12.00"
+          "descricao": "Finas láminas de carne con rúcula y parmesano",
+          "preco": 12.0
         },
         {
-          "nome": "tabla de quesos",
-          "descricao": "Selección de quesos portugueses e internacionales.",
-          "preco": "€15.00"
+          "nome": "Tabla de quesos",
+          "descricao": "Selección de quesos portugueses e internacionales",
+          "preco": 15.0
         }
       ]
     },
     {
-      "categoria": "Platos diarios",
+      "categoria": "Platos principales",
       "itens": [
         {
-          "nome": "tabla de quesos",
-          "descricao": "Selección de quesos portugueses e internacionales.",
-          "preco": "€15.00"
-        }
-      ]
-    },
-    {
-      "categoria": "Platos Principales",
-      "itens": [
-        {
-          "nome": "Bacalhau a Brás",
-          "descricao": "Bacalao desmenuzado con patatas paja y huevos",
-          "preco": "€18.00"
+          "nome": "Bacalhau à Brás",
+          "descricao": "Bacalao desmigado con patatas paja y huevo",
+          "preco": 18.0
         },
         {
-          "nome": "Pulpo en Lagareiro",
-          "descricao": "Pulpo a la plancha con puré de patatas y aceite de oliva",
-          "preco": "€24.00"
+          "nome": "Polvo à lagareiro",
+          "descricao": "Pulpo asado con patatas aplastadas, ajo y aceite de oliva",
+          "preco": 24.0
         },
         {
-          "nome": "Carne Wellington",
-          "descricao": "Lomo envuelto en hojaldre con foie gras",
-          "preco": "€28.00"
+          "nome": "Solomillo Wellington",
+          "descricao": "Solomillo de ternera en hojaldre con foie gras",
+          "preco": 28.0
         },
         {
-          "nome": "Risotto de champiñones",
-          "descricao": "Risotto cremoso con setas",
-          "preco": "€16.00"
+          "nome": "Risotto de setas",
+          "descricao": "Risotto cremoso con setas silvestres",
+          "preco": 16.0
         }
       ]
     },
@@ -84,19 +81,19 @@
       "categoria": "Postres",
       "itens": [
         {
-          "nome": "pastel de nata",
-          "descricao": "Tarta de natillas tradicional portuguesa",
-          "preco": "€3.50"
+          "nome": "Pastel de nata",
+          "descricao": "La tarta de crema portuguesa, recién horneada",
+          "preco": 3.5
         },
         {
           "nome": "Mousse de chocolate",
-          "descricao": "Mousse de chocolate belga artesanal",
-          "preco": "€6.00"
+          "descricao": "Mousse casera de chocolate belga",
+          "preco": 6.0
         },
         {
-          "nome": "Tiramisú",
-          "descricao": "Clásico italiano con café y mascarpone",
-          "preco": "€7.00"
+          "nome": "Tiramisù",
+          "descricao": "El clásico italiano, con café y mascarpone",
+          "preco": 7.0
         }
       ]
     }
@@ -106,30 +103,29 @@
     "sobre": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80",
     "galeria": [
       {
-        "url": "https://images.unsplash.com/photo-1544025162-d76694265947?w=600&q=80",
-        "alt": "plato gourmet"
+        "url": "https://images.pexels.com/photos/39022480/pexels-photo-39022480.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "alt": "Pulpo a la parrilla con rúcula"
       },
       {
-        "url": "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600&q=80",
-        "alt": "Ambiente de restaurante"
+        "url": "https://images.pexels.com/photos/11044248/pexels-photo-11044248.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "alt": "Lomo de bacalao con verduras"
       },
       {
-        "url": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=600&q=80",
-        "alt": "platos especiales"
+        "url": "https://images.pexels.com/photos/11190138/pexels-photo-11190138.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "alt": "Risotto de setas con albahaca"
       },
       {
-        "url": "https://images.unsplash.com/photo-1572448862527-d3c904757de6?w=600&q=80",
-        "alt": "Postres"
+        "url": "https://images.pexels.com/photos/12232125/pexels-photo-12232125.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "alt": "Pastéis de nata recién hechos"
       },
       {
-        "url": "https://images.unsplash.com/photo-1551218808-94e220e084d2?w=600&q=80",
-        "alt": "Bar"
+        "url": "https://images.pexels.com/photos/6287310/pexels-photo-6287310.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "alt": "Pasta fresca extendida a mano"
       },
       {
-        "url": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&q=80",
-        "alt": "Chef preparando"
+        "url": "https://images.pexels.com/photos/36430091/pexels-photo-36430091.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "alt": "El chef emplatando"
       }
     ]
-  },
-  "ano": 2024
+  }
 }
