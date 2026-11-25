@@ -28,7 +28,10 @@ npm run build      # production build to dist/
 npm run preview    # serve the built dist/
 npm run lint       # ESLint (flat config in eslint.config.js)
 npm run translate  # regenerate src/data/restaurante.{en,es,fr,de}.json from restaurante.json
+docker compose up -d --build  # local containers: main on :8090, develop on :8091
 ```
+
+The Docker setup (`docker-compose.yml`, `docker/`) is only for comparing the `main` and `develop` branches side by side on this machine; it is not a deploy. `docker/Dockerfile` pulls the source with `ADD <repo>.git#<BRANCH>`, so it builds what is pushed to GitHub, not the local working tree. It serves at `/` (no `BASE_PATH`), and `docker/nginx.conf` provides the SPA fallback.
 
 There is no test suite.
 
