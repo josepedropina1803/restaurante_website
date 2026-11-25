@@ -4,7 +4,9 @@
     "about": "Sobre",
     "menu": "Ementa",
     "gallery": "Galeria",
-    "contact": "Contacto"
+    "contact": "Contacto",
+    "openMenu": "Abrir menu",
+    "closeMenu": "Fechar menu"
   },
   "hero": {
     "viewMenu": "Ver Ementa"

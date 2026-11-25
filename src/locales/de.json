@@ -4,7 +4,9 @@
     "about": "Über Uns",
     "menu": "Speisekarte",
     "gallery": "Galerie",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "openMenu": "Menü öffnen",
+    "closeMenu": "Menü schließen"
   },
   "hero": {
     "viewMenu": "Speisekarte Ansehen"
