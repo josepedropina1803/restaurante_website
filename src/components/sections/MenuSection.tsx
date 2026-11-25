@@ -13,7 +13,7 @@ export function MenuSection({ categorias }: MenuSectionProps) {
   const { t } = useTranslation()
 
   return (
-    <section id="menu" className="bg-cream py-20">
+    <section id="menu" className="scroll-mt-20 bg-cream py-20">
       <div className="container mx-auto px-6">
         <SectionHeading subtitle={t('menu.subtitle')} title={t('menu.title')} />
 

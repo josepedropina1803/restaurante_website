@@ -32,10 +32,10 @@ export function EmentaPage() {
       <footer className="mt-12 bg-dark-brown py-6 text-cream">
         <div className="container mx-auto px-6 text-center">
           <p className="text-sm">
-            {t('contact.reservations')}: {contacto.telefone} | {contacto.email}
+            {t('contact.reservations')} · {contacto.telefone} · {contacto.email}
           </p>
           <p className="mt-2 text-xs text-gray-400">
-            {contacto.morada.rua} - {contacto.morada.codigoPostal} {contacto.morada.cidade}
+            {contacto.morada.rua} · {contacto.morada.codigoPostal} {contacto.morada.cidade}
           </p>
         </div>
       </footer>

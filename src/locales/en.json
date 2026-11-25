@@ -8,29 +8,33 @@
     "openMenu": "Open menu",
     "closeMenu": "Close menu"
   },
+  "language": {
+    "label": "Language"
+  },
   "hero": {
-    "viewMenu": "View Menu"
+    "viewMenu": "View the menu"
   },
   "about": {
-    "subtitle": "Our Story",
-    "title": "Tradition and Flavor"
+    "subtitle": "Our story",
+    "title": "Tradition and flavour",
+    "imageAlt": "A dish served in the dining room"
   },
   "menu": {
-    "subtitle": "Our Menu",
-    "title": "Culinary Delights",
-    "viewFullMenu": "View full menu (only)"
+    "subtitle": "Our menu",
+    "title": "What we serve",
+    "viewFullMenu": "View the full menu"
   },
   "gallery": {
     "subtitle": "Gallery",
-    "title": "Special Moments"
+    "title": "From the kitchen to the table"
   },
   "contact": {
     "subtitle": "Contact",
-    "title": "Visit Us",
-    "location": "Location",
-    "hours": "Hours",
+    "title": "Visit us",
+    "location": "Address",
+    "hours": "Opening hours",
     "reservations": "Reservations",
-    "makeReservation": "Make Reservation"
+    "makeReservation": "Book a table"
   },
   "footer": {
     "rights": "All rights reserved"

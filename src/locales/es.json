@@ -1,41 +1,45 @@
 {
   "nav": {
     "home": "Inicio",
-    "about": "Sobre Nosotros",
-    "menu": "Menú",
+    "about": "Nosotros",
+    "menu": "Carta",
     "gallery": "Galería",
     "contact": "Contacto",
     "openMenu": "Abrir menú",
     "closeMenu": "Cerrar menú"
   },
+  "language": {
+    "label": "Idioma"
+  },
   "hero": {
-    "viewMenu": "Ver Menú"
+    "viewMenu": "Ver la carta"
   },
   "about": {
-    "subtitle": "Nuestra Historia",
-    "title": "Tradición y Sabor"
+    "subtitle": "Nuestra historia",
+    "title": "Tradición y sabor",
+    "imageAlt": "Plato servido en el comedor"
   },
   "menu": {
-    "subtitle": "Nuestro Menú",
-    "title": "Delicias Culinarias",
-    "viewFullMenu": "Ver menú completo (solo)"
+    "subtitle": "Nuestra carta",
+    "title": "Lo que servimos",
+    "viewFullMenu": "Ver la carta completa"
   },
   "gallery": {
     "subtitle": "Galería",
-    "title": "Momentos Especiales"
+    "title": "De la cocina a la mesa"
   },
   "contact": {
     "subtitle": "Contacto",
-    "title": "Visítanos",
-    "location": "Ubicación",
+    "title": "Visítenos",
+    "location": "Dirección",
     "hours": "Horario",
     "reservations": "Reservas",
-    "makeReservation": "Hacer Reserva"
+    "makeReservation": "Reservar mesa"
   },
   "footer": {
     "rights": "Todos los derechos reservados"
   },
   "ementaPage": {
-    "title": "Menú"
+    "title": "Carta"
   }
 }

@@ -11,14 +11,14 @@ import {
 import { getLanguage, LANGUAGES } from '@/lib/languages'
 
 export function LanguageSwitcher() {
-  const { i18n } = useTranslation()
+  const { t, i18n } = useTranslation()
   const atual = getLanguage(i18n.language)
 
   return (
     <DropdownMenu modal={false}>
       <DropdownMenuTrigger asChild>
         <Button
-          aria-label={atual.name}
+          aria-label={`${t('language.label')}: ${atual.name}`}
           className="h-auto gap-2 rounded px-4 py-2 text-base font-medium hover:bg-yellow-600"
         >
           <span className="text-xl" aria-hidden="true">

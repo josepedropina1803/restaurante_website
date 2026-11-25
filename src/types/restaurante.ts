@@ -1,12 +1,17 @@
 export interface MenuItem {
   nome: string
   descricao: string
-  preco: string
+  preco: number
 }
 
 export interface MenuCategoria {
   categoria: string
   itens: MenuItem[]
+}
+
+export interface HorarioLinha {
+  dias: string
+  horas: string
 }
 
 export interface Imagem {
@@ -28,9 +33,8 @@ export interface Restaurante {
       pais: string
     }
   }
-  horario: {
-    descricao: string
-  }
+  horario: HorarioLinha[]
+  /** Deixar a string vazia para esconder o link. */
   redesSociais: {
     facebook: string
     instagram: string
@@ -42,5 +46,4 @@ export interface Restaurante {
     sobre: string
     galeria: Imagem[]
   }
-  ano: number
 }

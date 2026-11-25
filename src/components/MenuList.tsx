@@ -1,4 +1,7 @@
+import { useTranslation } from 'react-i18next'
+
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { formatPreco } from '@/lib/format'
 import type { MenuCategoria } from '@/types/restaurante'
 
 interface MenuListProps {
@@ -6,6 +9,8 @@ interface MenuListProps {
 }
 
 export function MenuList({ categorias }: MenuListProps) {
+  const { i18n } = useTranslation()
+
   return (
     <div className="space-y-12">
       {categorias.map((categoria) => (
@@ -28,7 +33,9 @@ export function MenuList({ categorias }: MenuListProps) {
                   <h4 className="mb-2 font-serif text-xl text-dark-brown">{item.nome}</h4>
                   <p className="text-sm text-gray-600">{item.descricao}</p>
                 </div>
-                <div className="ml-4 text-lg font-semibold text-gold">{item.preco}</div>
+                <div className="ml-4 text-lg font-semibold whitespace-nowrap text-gold">
+                  {formatPreco(item.preco, i18n.language)}
+                </div>
               </div>
             ))}
           </CardContent>
